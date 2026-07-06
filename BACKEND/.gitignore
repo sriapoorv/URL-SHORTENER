@@ -1,0 +1,28 @@
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.test
+
+# Build outputs
+coverage/
+.nyc_output/
+lib-cov/
+*.tgz
+
+# Optional caches
+.npm
+.eslintcache
+.node_repl_history
+
+# OS files
+.DS_Store   
