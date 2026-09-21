@@ -1,1 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
 @import "tailwindcss";
+
+
+:root {
+  --bg: #F6F7FB;
+  --surface: #FFFFFF;
+  --ink: #12131A;
+  --ink-soft: #5B6172;
+  --accent: #3D5AFE;
+  --accent-dark: #2A3EEA;
+  --accent-soft: #E8EBFF;
+  --mint: #00B8A9;
+  --mint-soft: #E1F7F4;
+  --danger: #E5484D;
+  --danger-soft: #FBE9E9;
+  --border: #E2E4EC;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--ink);
+  font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+.font-display {
+  font-family: 'Space Grotesk', 'Inter', ui-sans-serif, sans-serif;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.35s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up {
+    animation: none;
+  }
+}

@@ -4,14 +4,21 @@ import UserUrl from '../components/UserUrl'
 
 const DashboardPage = () => {
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center p-4">
-    <div className="bg-white -mt-20 p-8 rounded-lg shadow-md w-full max-w-4xl">
-      <h1 className="text-2xl font-bold text-center mb-6">URL Shortener</h1>
-      <UrlForm/>
-      <UserUrl/>
+    <div className="min-h-[calc(100vh-4rem)] p-4 sm:p-8">
+      <div className="max-w-2xl mx-auto animate-fade-up">
+        <div className="mb-6">
+          <h1 className="font-display text-2xl font-bold text-[var(--ink)]">Your links</h1>
+          <p className="text-[var(--ink-soft)] mt-1">Create and track all your shortened URLs.</p>
+        </div>
+
+        <div className="bg-[var(--surface)] border border-[var(--border)] shadow-sm rounded-2xl p-6 sm:p-8 mb-6">
+          <UrlForm />
+        </div>
+
+        <UserUrl />
+      </div>
     </div>
-  </div>
   )
 }
 
-export default DashboardPage;
+export default DashboardPage
